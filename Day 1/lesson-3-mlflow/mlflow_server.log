@@ -1,0 +1,500 @@
+Backend store URI not provided. Using sqlite:///mlflow.db
+Registry store URI not provided. Using backend store URI.
+[MLflow] Security middleware enabled with default settings (localhost-only). To allow connections from other hosts, use --host 0.0.0.0 and configure --allowed-hosts and --cors-allowed-origins.
+2026/10/06 15:35:50 INFO:     Uvicorn running on http://127.0.0.1:5002 (Press CTRL+C to quit)
+2026/10/06 15:35:50 INFO:     Started parent process [7106]
+/Users/thabet.chelligue/Library/CloudStorage/OneDrive-G42/WORK/PROJECTS/LLMOps/oreilly-mlops-bootcamp/Day 1/lesson-3-mlflow/.venv/lib/python3.12/site-packages/mlflow/server/fastapi_app.py:23: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+/Users/thabet.chelligue/Library/CloudStorage/OneDrive-G42/WORK/PROJECTS/LLMOps/oreilly-mlops-bootcamp/Day 1/lesson-3-mlflow/.venv/lib/python3.12/site-packages/mlflow/server/fastapi_app.py:23: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+/Users/thabet.chelligue/Library/CloudStorage/OneDrive-G42/WORK/PROJECTS/LLMOps/oreilly-mlops-bootcamp/Day 1/lesson-3-mlflow/.venv/lib/python3.12/site-packages/mlflow/server/fastapi_app.py:23: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+/Users/thabet.chelligue/Library/CloudStorage/OneDrive-G42/WORK/PROJECTS/LLMOps/oreilly-mlops-bootcamp/Day 1/lesson-3-mlflow/.venv/lib/python3.12/site-packages/mlflow/server/fastapi_app.py:23: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+2026/10/06 15:35:53 INFO:     Started server process [7110]
+2026/10/06 15:35:53 INFO:     Started server process [7109]
+2026/10/06 15:35:53 INFO:     Waiting for application startup.
+2026/10/06 15:35:53 INFO:     Waiting for application startup.
+2026/10/06 15:35:53 INFO:     Started server process [7111]
+2026/10/06 15:35:53 INFO:     Waiting for application startup.
+2026/10/06 15:35:53 INFO:     Started server process [7112]
+2026/10/06 15:35:53 INFO:     Waiting for application startup.
+2026/10/06 15:35:54 INFO:     Application startup complete.
+2026/10/06 15:35:54 INFO:     Application startup complete.
+2026/10/06 15:35:54 INFO:     Application startup complete.
+2026/10/06 15:35:54 INFO:     Application startup complete.
+2026/10/06 15:35:54 INFO:     127.0.0.1:59363 - "GET /health HTTP/1.1" 200 OK
+2026/10/06 15:35:54 INFO mlflow.server.jobs.utils: Registered online_scoring_scheduler periodic task (runs every 1 minute)
+2026/10/06 15:35:54 INFO mlflow.server.jobs.utils: Registered trace_archival_scheduler periodic task (polls every 1 minute and no-ops when trace archival is disabled or unconfigured)
+2026/10/06 15:35:54 INFO:     127.0.0.1:59364 - "GET /api/2.0/mlflow/experiments/get-by-name?experiment_name=Air_Quality_Experiment HTTP/1.1" 200 OK
+2026/10/06 15:36:05 INFO:     127.0.0.1:59375 - "GET /health HTTP/1.1" 200 OK
+2026/10/06 15:36:05 INFO:     127.0.0.1:59376 - "GET /api/2.0/mlflow/experiments/get-by-name?experiment_name=Air_Quality_Experiment HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59401 - "GET / HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59404 - "GET /static-files/manifest.json HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59402 - "GET /static-files/static/css/main.b0f58ef9.css HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59401 - "GET /static-files/static/js/main.32eac661.js HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59401 - "GET /static-files/TelemetryLogger.telemetry-worker.d0f8ea2c83c08b63528f.worker.js HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59404 - "GET /static-files/favicon.ico HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59402 - "GET /ajax-api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59401 - "GET /ajax-api/2.0/mlflow/users/current HTTP/1.1" 404 Not Found
+2026/10/06 15:36:18 INFO:     127.0.0.1:59406 - "GET /ajax-api/3.0/mlflow/assistant/config HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59407 - "GET /ajax-api/3.0/mlflow/assistant/providers HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59402 - "GET /static-files/static/js/4205.9e750e7b.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59406 - "GET /ajax-api/3.0/mlflow/assistant/providers HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59401 - "GET /ajax-api/3.0/mlflow/assistant/config HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59401 - "GET /static-files/static/js/3877.386ccaf4.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59407 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59406 - "GET /static-files/static/css/5027.26533251.chunk.css HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59402 - "GET /static-files/static/js/5027.a66ffe35.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59401 - "GET /static-files/static/js/7340.cdf02082.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:18 INFO:     127.0.0.1:59408 - "GET /static-files/static/media/demo-tracing-screenshot.f95794fa205aa8e6c386.png HTTP/1.1" 200 OK
+2026/10/06 15:36:19 INFO:     127.0.0.1:59404 - "GET /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59407 - "GET /static-files/static/css/5439.24118451.chunk.css HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59402 - "GET /static-files/static/js/3448.da9a79ba.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59406 - "GET /static-files/static/js/2809.4115baa4.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59408 - "GET /static-files/static/js/6507.352ad2e0.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59406 - "GET /static-files/static/js/5439.b5816bbb.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59404 - "GET /static-files/static/js/9861.2d6b3bae.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59402 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59401 - "GET /static-files/static/js/353.df7e2039.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59407 - "POST /graphql HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59402 - "GET /static-files/static/js/6395.ad9cfe58.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59401 - "GET /static-files/static/js/1416.113691cc.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59407 - "GET /static-files/static/js/9848.1ab8e8e7.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59404 - "GET /static-files/static/js/9538.46130387.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59406 - "GET /static-files/static/js/306.59e72e30.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59402 - "GET /static-files/static/js/2012.1ddb734e.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59401 - "GET /static-files/static/js/7877.54908f75.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59408 - "GET /static-files/static/js/9067.923c3c2c.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59406 - "GET /static-files/static/js/7406.6ad65c50.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59401 - "GET /static-files/static/js/3269.4abb53f2.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59402 - "GET /static-files/static/js/6306.7046f42a.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59408 - "GET /static-files/static/js/4565.caf5aead.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59407 - "GET /static-files/static/js/5105.ac05ca79.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59402 - "GET /static-files/static/js/90.0784d2e8.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59406 - "GET /static-files/static/js/6895.ff8c3bc6.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59408 - "GET /static-files/static/js/8359.35efdf16.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:21 INFO:     127.0.0.1:59401 - "GET /static-files/static/js/7455.b2b69708.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:22 INFO:     127.0.0.1:59404 - "GET /static-files/static/js/4899.bad65f94.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:22 INFO:     127.0.0.1:59406 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/06 15:36:22 INFO:     127.0.0.1:59407 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/06 15:36:22 INFO:     127.0.0.1:59402 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/06 15:36:22 INFO:     127.0.0.1:59406 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/06 15:36:22 INFO:     127.0.0.1:59406 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/06 15:36:22 INFO:     127.0.0.1:59407 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/06 15:36:22 INFO:     127.0.0.1:59402 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/06 15:36:22 INFO:     127.0.0.1:59406 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/06 15:36:22 INFO:     127.0.0.1:59408 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/06 15:36:22 INFO:     127.0.0.1:59404 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/06 15:36:22 INFO:     127.0.0.1:59401 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59406 - "GET /static-files/static/js/855.25446ffc.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59407 - "GET /static-files/static/js/9360.ea3236af.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59402 - "GET /static-files/static/js/8209.825773bd.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59401 - "GET /static-files/static/js/3198.bb9ac57b.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59408 - "GET /static-files/static/js/8503.9d34794c.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59406 - "GET /static-files/static/css/5343.b4cc2aa3.chunk.css HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59402 - "GET /static-files/static/js/2369.90891e4f.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59401 - "GET /static-files/static/js/3121.3be60de2.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59408 - "GET /static-files/static/js/4751.94bc6db7.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59404 - "GET /static-files/static/js/4863.c17ad67f.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59402 - "GET /static-files/static/js/3793.a9a16802.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59401 - "GET /static-files/static/js/9662.9a8db43d.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59407 - "GET /static-files/static/js/7182.19d2877a.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59406 - "GET /static-files/static/js/9867.fe03ab1c.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59404 - "GET /static-files/static/js/5702.205ea7af.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59401 - "GET /static-files/static/js/5343.bbb1f624.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59408 - "GET /static-files/static/js/6475.4f6f51a9.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59402 - "GET /static-files/static/js/3878.0467b2c4.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59402 - "POST /ajax-api/2.0/mlflow/experiments/search-datasets HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59402 - "GET /static-files/static/css/2685.f073c5c3.chunk.css HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59401 - "GET /ajax-api/2.0/mlflow/gateway-proxy?gateway_path=api%2F2.0%2Fendpoints%2F HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59404 - "GET /static-files/static/js/1372.38a0e73a.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59406 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:36:27 INFO:     127.0.0.1:59407 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/06 15:36:28 INFO:     127.0.0.1:59408 - "GET /static-files/static/js/2685.2f8f1b38.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:41 INFO:     127.0.0.1:59429 - "GET /health HTTP/1.1" 200 OK
+2026/10/06 15:36:41 INFO:     127.0.0.1:59430 - "GET /api/2.0/mlflow/experiments/get-by-name?experiment_name=Air_Quality_Experiment HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "POST /api/2.0/mlflow/runs/create HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "POST /api/2.0/mlflow/runs/set-tag HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "POST /api/2.0/mlflow/runs/set-tag HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "POST /api/2.0/mlflow/runs/log-parameter HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "POST /api/2.0/mlflow/runs/log-parameter HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "POST /api/2.0/mlflow/runs/log-parameter HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "POST /api/2.0/mlflow/runs/log-metric HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "POST /api/2.0/mlflow/runs/log-metric HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "POST /api/2.0/mlflow/runs/log-metric HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "POST /api/2.0/mlflow/runs/log-metric HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "GET /api/2.0/mlflow/runs/get?run_uuid=80e9ac1e078a4f1eb8666f7b65efaaf6&run_id=80e9ac1e078a4f1eb8666f7b65efaaf6 HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "POST /api/2.0/mlflow/logged-models HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "POST /api/2.0/mlflow/runs/outputs HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "GET /api/2.0/mlflow/runs/get?run_uuid=80e9ac1e078a4f1eb8666f7b65efaaf6&run_id=80e9ac1e078a4f1eb8666f7b65efaaf6 HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=80e9ac1e078a4f1eb8666f7b65efaaf6&metric_key=accuracy&run_id=80e9ac1e078a4f1eb8666f7b65efaaf6&max_results=25000 HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=80e9ac1e078a4f1eb8666f7b65efaaf6&metric_key=precision&run_id=80e9ac1e078a4f1eb8666f7b65efaaf6&max_results=25000 HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=80e9ac1e078a4f1eb8666f7b65efaaf6&metric_key=recall&run_id=80e9ac1e078a4f1eb8666f7b65efaaf6&max_results=25000 HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=80e9ac1e078a4f1eb8666f7b65efaaf6&metric_key=f1_score&run_id=80e9ac1e078a4f1eb8666f7b65efaaf6&max_results=25000 HTTP/1.1" 200 OK
+2026/10/06 15:36:42 INFO:     127.0.0.1:59430 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/10/06 15:36:43 INFO:     127.0.0.1:59435 - "GET /api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+2026/10/06 15:36:46 INFO:     127.0.0.1:59452 - "GET /static-files/static/js/7349.715264bd.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:46 INFO:     127.0.0.1:59451 - "GET /static-files/static/js/4649.e79cc735.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:46 INFO:     127.0.0.1:59452 - "GET /static-files/static/css/2684.13093132.chunk.css HTTP/1.1" 200 OK
+2026/10/06 15:36:46 INFO:     127.0.0.1:59450 - "GET /static-files/static/js/5995.b8faaf19.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:46 INFO:     127.0.0.1:59451 - "GET /static-files/static/js/9930.05913dd5.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:46 INFO:     127.0.0.1:59449 - "GET /static-files/static/js/3254.9017d695.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:46 INFO:     127.0.0.1:59448 - "GET /static-files/static/js/930.147f5280.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:46 INFO:     127.0.0.1:59447 - "GET /static-files/static/js/7720.1cbd9501.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:36:47 INFO:     127.0.0.1:59448 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=run_id%3D%271d3858d47e284ae7ac04aab457e585cb%27 HTTP/1.1" 200 OK
+2026/10/06 15:36:47 INFO:     127.0.0.1:59447 - "POST /graphql HTTP/1.1" 200 OK
+2026/10/06 15:36:47 INFO:     127.0.0.1:59448 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%251d3858d47e284ae7ac04aab457e585cb%25%22 HTTP/1.1" 200 OK
+2026/10/06 15:36:47 INFO:     127.0.0.1:59449 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/06 15:36:47 INFO:     127.0.0.1:59447 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:36:48 INFO:     127.0.0.1:59447 - "POST /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/10/06 15:36:49 INFO:     127.0.0.1:59451 - "POST /ajax-api/2.0/mlflow/experiments/search-datasets HTTP/1.1" 200 OK
+2026/10/06 15:36:49 INFO:     127.0.0.1:59447 - "GET /ajax-api/2.0/mlflow/gateway-proxy?gateway_path=api%2F2.0%2Fendpoints%2F HTTP/1.1" 200 OK
+2026/10/06 15:36:49 INFO:     127.0.0.1:59448 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:36:49 INFO:     127.0.0.1:59449 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/06 15:36:49 INFO:     127.0.0.1:59457 - "GET /api/2.0/mlflow/logged-models/m-c8a4e51d5c0a45a18d033f0c2d8469c5 HTTP/1.1" 200 OK
+2026/10/06 15:36:49 INFO:     127.0.0.1:59457 - "PUT /api/2.0/mlflow-artifacts/artifacts/1/models/m-c8a4e51d5c0a45a18d033f0c2d8469c5/artifacts/python_env.yaml HTTP/1.1" 200 OK
+2026/10/06 15:36:49 INFO:     127.0.0.1:59457 - "PUT /api/2.0/mlflow-artifacts/artifacts/1/models/m-c8a4e51d5c0a45a18d033f0c2d8469c5/artifacts/requirements.txt HTTP/1.1" 200 OK
+2026/10/06 15:36:49 INFO:     127.0.0.1:59457 - "PUT /api/2.0/mlflow-artifacts/artifacts/1/models/m-c8a4e51d5c0a45a18d033f0c2d8469c5/artifacts/MLmodel HTTP/1.1" 200 OK
+2026/10/06 15:36:49 INFO:     127.0.0.1:59457 - "PUT /api/2.0/mlflow-artifacts/artifacts/1/models/m-c8a4e51d5c0a45a18d033f0c2d8469c5/artifacts/conda.yaml HTTP/1.1" 200 OK
+2026/10/06 15:36:49 INFO:     127.0.0.1:59457 - "PUT /api/2.0/mlflow-artifacts/artifacts/1/models/m-c8a4e51d5c0a45a18d033f0c2d8469c5/artifacts/model.skops HTTP/1.1" 200 OK
+2026/10/06 15:36:49 INFO:     127.0.0.1:59457 - "PATCH /api/2.0/mlflow/logged-models/m-c8a4e51d5c0a45a18d033f0c2d8469c5 HTTP/1.1" 200 OK
+2026/10/06 15:36:49 INFO:     127.0.0.1:59457 - "GET /api/2.0/mlflow/runs/get?run_uuid=80e9ac1e078a4f1eb8666f7b65efaaf6&run_id=80e9ac1e078a4f1eb8666f7b65efaaf6 HTTP/1.1" 200 OK
+2026/10/06 15:36:49 INFO:     127.0.0.1:59457 - "POST /api/2.0/mlflow/runs/update HTTP/1.1" 200 OK
+2026/10/06 15:36:49 INFO:     127.0.0.1:59457 - "GET /api/2.0/mlflow/experiments/get-by-name?experiment_name=Air_Quality_Experiment HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59457 - "POST /api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59457 - "GET /api/2.0/mlflow/runs/get?run_uuid=4be2a01c2cd9405aac7e308ceeaadfe6&run_id=4be2a01c2cd9405aac7e308ceeaadfe6 HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59457 - "GET /api/2.0/mlflow-artifacts/artifacts?path=1%2F4be2a01c2cd9405aac7e308ceeaadfe6%2Fartifacts%2Fmodel HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59457 - "GET /api/2.0/mlflow-artifacts/artifacts/1/4be2a01c2cd9405aac7e308ceeaadfe6/artifacts/model HTTP/1.1" 404 Not Found
+2026/10/06 15:36:50 INFO:     127.0.0.1:59457 - "GET /api/2.0/mlflow/runs/get?run_uuid=4be2a01c2cd9405aac7e308ceeaadfe6&run_id=4be2a01c2cd9405aac7e308ceeaadfe6 HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59457 - "POST /api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59457 - "GET /api/2.0/mlflow/logged-models/m-78f16b3c57ea4a02bdc79453ed5f92cb HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59457 - "GET /api/2.0/mlflow-artifacts/artifacts?path=1%2Fmodels%2Fm-78f16b3c57ea4a02bdc79453ed5f92cb%2Fartifacts HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59457 - "GET /api/2.0/mlflow-artifacts/artifacts?path=1%2Fmodels%2Fm-78f16b3c57ea4a02bdc79453ed5f92cb%2Fartifacts HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59461 - "GET /api/2.0/mlflow-artifacts/artifacts/1/models/m-78f16b3c57ea4a02bdc79453ed5f92cb/artifacts/model.skops HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59457 - "GET /api/2.0/mlflow-artifacts/artifacts/1/models/m-78f16b3c57ea4a02bdc79453ed5f92cb/artifacts/MLmodel HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59462 - "GET /api/2.0/mlflow-artifacts/artifacts/1/models/m-78f16b3c57ea4a02bdc79453ed5f92cb/artifacts/requirements.txt HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59460 - "GET /api/2.0/mlflow-artifacts/artifacts/1/models/m-78f16b3c57ea4a02bdc79453ed5f92cb/artifacts/python_env.yaml HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59463 - "GET /api/2.0/mlflow-artifacts/artifacts/1/models/m-78f16b3c57ea4a02bdc79453ed5f92cb/artifacts/conda.yaml HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59448 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=run_id%3D%2780e9ac1e078a4f1eb8666f7b65efaaf6%27 HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59449 - "POST /graphql HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59448 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59447 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/06 15:36:50 INFO:     127.0.0.1:59449 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:36:52 INFO:     127.0.0.1:59449 - "GET /ajax-api/2.0/mlflow/gateway-proxy?gateway_path=api%2F2.0%2Fendpoints%2F HTTP/1.1" 200 OK
+2026/10/06 15:36:52 INFO:     127.0.0.1:59451 - "POST /ajax-api/2.0/mlflow/experiments/search-datasets HTTP/1.1" 200 OK
+2026/10/06 15:36:52 INFO:     127.0.0.1:59448 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:36:52 INFO:     127.0.0.1:59447 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/06 15:36:53 INFO:     127.0.0.1:59448 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%251d3858d47e284ae7ac04aab457e585cb%25%22 HTTP/1.1" 200 OK
+2026/10/06 15:36:53 INFO:     127.0.0.1:59449 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=run_id%3D%271d3858d47e284ae7ac04aab457e585cb%27 HTTP/1.1" 200 OK
+2026/10/06 15:36:53 INFO:     127.0.0.1:59447 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:36:53 INFO:     127.0.0.1:59451 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/06 15:36:55 INFO:     127.0.0.1:59451 - "GET /ajax-api/2.0/mlflow/gateway-proxy?gateway_path=api%2F2.0%2Fendpoints%2F HTTP/1.1" 200 OK
+2026/10/06 15:36:55 INFO:     127.0.0.1:59449 - "POST /ajax-api/2.0/mlflow/experiments/search-datasets HTTP/1.1" 200 OK
+2026/10/06 15:36:55 INFO:     127.0.0.1:59448 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:36:55 INFO:     127.0.0.1:59447 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/06 15:36:56 INFO:     127.0.0.1:59448 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 15:36:56 INFO:     127.0.0.1:59449 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/06 15:36:56 INFO:     127.0.0.1:59447 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:36:56 INFO:     127.0.0.1:59451 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=run_id%3D%2780e9ac1e078a4f1eb8666f7b65efaaf6%27 HTTP/1.1" 200 OK
+2026/10/06 15:36:58 INFO:     127.0.0.1:59451 - "GET /ajax-api/2.0/mlflow/gateway-proxy?gateway_path=api%2F2.0%2Fendpoints%2F HTTP/1.1" 200 OK
+2026/10/06 15:36:58 INFO:     127.0.0.1:59448 - "POST /ajax-api/2.0/mlflow/experiments/search-datasets HTTP/1.1" 200 OK
+2026/10/06 15:36:58 INFO:     127.0.0.1:59449 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:36:58 INFO:     127.0.0.1:59447 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/06 15:36:59 INFO:     127.0.0.1:59449 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=run_id%3D%27fa76e542ce03469e93a8ea02eaeda7f9%27 HTTP/1.1" 200 OK
+2026/10/06 15:36:59 INFO:     127.0.0.1:59447 - "POST /graphql HTTP/1.1" 200 OK
+2026/10/06 15:36:59 INFO:     127.0.0.1:59449 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%25fa76e542ce03469e93a8ea02eaeda7f9%25%22 HTTP/1.1" 200 OK
+2026/10/06 15:36:59 INFO:     127.0.0.1:59448 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/06 15:36:59 INFO:     127.0.0.1:59447 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:37:01 INFO:     127.0.0.1:59451 - "POST /ajax-api/2.0/mlflow/experiments/search-datasets HTTP/1.1" 200 OK
+2026/10/06 15:37:01 INFO:     127.0.0.1:59447 - "GET /ajax-api/2.0/mlflow/gateway-proxy?gateway_path=api%2F2.0%2Fendpoints%2F HTTP/1.1" 200 OK
+2026/10/06 15:37:01 INFO:     127.0.0.1:59449 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:37:01 INFO:     127.0.0.1:59448 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/06 15:37:02 INFO:     127.0.0.1:59451 - "GET /static-files/static/js/2825.b62ad5a7.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:37:02 INFO:     127.0.0.1:59449 - "GET /static-files/static/css/9288.ecc3b598.chunk.css HTTP/1.1" 200 OK
+2026/10/06 15:37:02 INFO:     127.0.0.1:59448 - "GET /static-files/static/js/4463.58bdf1f4.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:37:02 INFO:     127.0.0.1:59447 - "GET /static-files/static/js/9288.2ca2efc9.chunk.js HTTP/1.1" 200 OK
+2026/10/06 15:37:18 INFO:     127.0.0.1:59508 - "POST /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/10/06 15:37:31 INFO:     127.0.0.1:59524 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:37:51 INFO:     127.0.0.1:59561 - "GET / HTTP/1.1" 304 Not Modified
+2026/10/06 15:37:51 INFO:     127.0.0.1:59561 - "GET /ajax-api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+2026/10/06 15:37:51 INFO:     127.0.0.1:59561 - "GET /ajax-api/2.0/mlflow/users/current HTTP/1.1" 404 Not Found
+2026/10/06 15:37:51 INFO:     127.0.0.1:59562 - "GET /ajax-api/3.0/mlflow/assistant/config HTTP/1.1" 200 OK
+2026/10/06 15:37:51 INFO:     127.0.0.1:59562 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+2026/10/06 15:37:51 INFO:     127.0.0.1:59563 - "GET /ajax-api/3.0/mlflow/assistant/providers HTTP/1.1" 200 OK
+2026/10/06 15:38:01 INFO:     127.0.0.1:59590 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:38:31 INFO:     127.0.0.1:59627 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:39:01 INFO:     127.0.0.1:59685 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:39:31 INFO:     127.0.0.1:59734 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:40:02 INFO:     127.0.0.1:59794 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:40:33 INFO:     127.0.0.1:59918 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:41:04 INFO:     127.0.0.1:59974 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:41:34 INFO:     127.0.0.1:60030 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:41:43 INFO:     127.0.0.1:60044 - "POST /ajax-api/3.0/mlflow/assistant/message HTTP/1.1" 200 OK
+2026/10/06 15:41:43 INFO:     127.0.0.1:60044 - "GET /ajax-api/3.0/mlflow/assistant/sessions/4e7c15c0-2363-4077-8ba2-86207b642edb/stream HTTP/1.1" 200 OK
+2026/10/06 15:41:48 INFO:     127.0.0.1:60044 - "POST /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/10/06 15:41:50 INFO:     127.0.0.1:60044 - "POST /ajax-api/3.0/mlflow/assistant/message HTTP/1.1" 200 OK
+2026/10/06 15:41:50 INFO:     127.0.0.1:60044 - "GET /ajax-api/3.0/mlflow/assistant/sessions/4e7c15c0-2363-4077-8ba2-86207b642edb/stream HTTP/1.1" 200 OK
+2026/10/06 15:42:04 INFO:     127.0.0.1:60073 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:42:18 INFO:     127.0.0.1:60094 - "POST /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/10/06 15:42:34 INFO:     127.0.0.1:60124 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:43:04 INFO:     127.0.0.1:60162 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:43:34 INFO:     127.0.0.1:60209 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:44:05 INFO:     127.0.0.1:60279 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:44:36 INFO:     127.0.0.1:60331 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:45:07 INFO:     127.0.0.1:60367 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:45:37 INFO:     127.0.0.1:60406 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:46:08 INFO:     127.0.0.1:60448 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:46:39 INFO:     127.0.0.1:60513 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:47:10 INFO:     127.0.0.1:60556 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:47:41 INFO:     127.0.0.1:60614 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:48:12 INFO:     127.0.0.1:60664 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:48:43 INFO:     127.0.0.1:60731 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:49:14 INFO:     127.0.0.1:60790 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:49:45 INFO:     127.0.0.1:60833 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:50:16 INFO:     127.0.0.1:60868 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:50:47 INFO:     127.0.0.1:60912 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:51:18 INFO:     127.0.0.1:60958 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:51:50 INFO:     127.0.0.1:61013 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:52:21 INFO:     127.0.0.1:61067 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:52:52 INFO:     127.0.0.1:61123 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:53:23 INFO:     127.0.0.1:61179 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:53:54 INFO:     127.0.0.1:61242 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:54:25 INFO:     127.0.0.1:61311 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:54:56 INFO:     127.0.0.1:61370 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:55:27 INFO:     127.0.0.1:61404 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:55:58 INFO:     127.0.0.1:61449 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:56:29 INFO:     127.0.0.1:61506 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:57:00 INFO:     127.0.0.1:61571 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:57:09 INFO:     127.0.0.1:61584 - "GET / HTTP/1.1" 304 Not Modified
+2026/10/06 15:57:09 INFO:     127.0.0.1:61584 - "GET /ajax-api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+2026/10/06 15:57:09 INFO:     127.0.0.1:61589 - "GET /ajax-api/2.0/mlflow/users/current HTTP/1.1" 404 Not Found
+2026/10/06 15:57:09 INFO:     127.0.0.1:61590 - "GET /ajax-api/3.0/mlflow/assistant/config HTTP/1.1" 200 OK
+2026/10/06 15:57:09 INFO:     127.0.0.1:61591 - "GET /ajax-api/3.0/mlflow/assistant/providers HTTP/1.1" 200 OK
+2026/10/06 15:57:09 INFO:     127.0.0.1:61588 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:57:09 INFO:     127.0.0.1:61588 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:57:09 INFO:     127.0.0.1:61591 - "GET /ajax-api/2.0/mlflow/experiments/get?experiment_id=1 HTTP/1.1" 200 OK
+2026/10/06 15:57:09 INFO:     127.0.0.1:61590 - "POST /ajax-api/2.0/mlflow/experiments/search-datasets HTTP/1.1" 200 OK
+2026/10/06 15:57:09 INFO:     127.0.0.1:61590 - "GET /ajax-api/2.0/mlflow/gateway-proxy?gateway_path=api%2F2.0%2Fendpoints%2F HTTP/1.1" 200 OK
+2026/10/06 15:57:09 INFO:     127.0.0.1:61591 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/06 15:57:10 INFO:     127.0.0.1:61585 - "GET /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/10/06 15:57:10 INFO:     127.0.0.1:61584 - "POST /graphql HTTP/1.1" 200 OK
+2026/10/06 15:57:40 INFO:     127.0.0.1:61650 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:58:11 INFO:     127.0.0.1:61695 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:58:42 INFO:     127.0.0.1:61767 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:59:13 INFO:     127.0.0.1:61835 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 15:59:44 INFO:     127.0.0.1:61878 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:00:15 INFO:     127.0.0.1:61919 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:00:46 INFO:     127.0.0.1:61989 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:01:16 INFO:     127.0.0.1:62042 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:01:46 INFO:     127.0.0.1:62107 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:02:17 INFO:     127.0.0.1:62157 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:02:48 INFO:     127.0.0.1:62199 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:03:19 INFO:     127.0.0.1:62254 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:03:50 INFO:     127.0.0.1:62314 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:04:21 INFO:     127.0.0.1:62431 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:04:52 INFO:     127.0.0.1:62471 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:05:23 INFO:     127.0.0.1:62515 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:05:54 INFO:     127.0.0.1:62613 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:06:25 INFO:     127.0.0.1:62762 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:06:56 INFO:     127.0.0.1:62828 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:07:27 INFO:     127.0.0.1:62862 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:07:58 INFO:     127.0.0.1:62925 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:08:29 INFO:     127.0.0.1:62998 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:08:59 INFO:     127.0.0.1:63052 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:09:30 INFO:     127.0.0.1:63110 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:10:01 INFO:     127.0.0.1:63166 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:10:32 INFO:     127.0.0.1:63199 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:11:03 INFO:     127.0.0.1:63260 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:11:34 INFO:     127.0.0.1:63311 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:12:05 INFO:     127.0.0.1:63376 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:12:36 INFO:     127.0.0.1:63434 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:13:07 INFO:     127.0.0.1:63486 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:13:38 INFO:     127.0.0.1:63547 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:14:09 INFO:     127.0.0.1:63604 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:14:40 INFO:     127.0.0.1:63649 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:15:11 INFO:     127.0.0.1:63711 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:15:42 INFO:     127.0.0.1:63756 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:16:13 INFO:     127.0.0.1:63831 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:16:43 INFO:     127.0.0.1:63975 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:17:14 INFO:     127.0.0.1:64150 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:17:45 INFO:     127.0.0.1:64309 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:18:16 INFO:     127.0.0.1:64383 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:18:47 INFO:     127.0.0.1:64451 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:19:18 INFO:     127.0.0.1:64506 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:19:49 INFO:     127.0.0.1:64532 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:20:19 INFO:     127.0.0.1:49366 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:20:49 INFO:     127.0.0.1:50381 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:21:19 INFO:     127.0.0.1:50425 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:21:49 INFO:     127.0.0.1:50480 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:22:19 INFO:     127.0.0.1:50529 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:22:49 INFO:     127.0.0.1:50565 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:23:20 INFO:     127.0.0.1:50596 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:23:50 INFO:     127.0.0.1:50656 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:24:20 INFO:     127.0.0.1:50713 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:24:50 INFO:     127.0.0.1:50745 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:25:20 INFO:     127.0.0.1:50814 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:25:50 INFO:     127.0.0.1:50865 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:26:21 INFO:     127.0.0.1:50910 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:26:52 INFO:     127.0.0.1:50958 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:27:23 INFO:     127.0.0.1:51002 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:27:54 INFO:     127.0.0.1:51042 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:28:25 INFO:     127.0.0.1:51075 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:28:56 INFO:     127.0.0.1:51136 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:29:27 INFO:     127.0.0.1:51197 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:29:58 INFO:     127.0.0.1:51220 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:30:29 INFO:     127.0.0.1:51261 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:31:00 INFO:     127.0.0.1:51308 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:31:31 INFO:     127.0.0.1:51359 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:32:02 INFO:     127.0.0.1:51452 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:32:33 INFO:     127.0.0.1:51526 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:33:04 INFO:     127.0.0.1:51566 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:33:35 INFO:     127.0.0.1:51611 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:34:06 INFO:     127.0.0.1:51692 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:34:37 INFO:     127.0.0.1:51740 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:35:08 INFO:     127.0.0.1:51762 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:35:39 INFO:     127.0.0.1:51810 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:36:10 INFO:     127.0.0.1:51857 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:36:41 INFO:     127.0.0.1:51905 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:37:12 INFO:     127.0.0.1:51948 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:37:18 INFO:     127.0.0.1:51965 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:37:21 INFO:     127.0.0.1:51968 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=run_id%3D%2780e9ac1e078a4f1eb8666f7b65efaaf6%27 HTTP/1.1" 200 OK
+2026/10/06 16:37:21 INFO:     127.0.0.1:51965 - "POST /graphql HTTP/1.1" 200 OK
+2026/10/06 16:37:21 INFO:     127.0.0.1:51968 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 16:37:21 INFO:     127.0.0.1:51965 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 16:37:21 INFO:     127.0.0.1:51969 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/06 16:37:40 INFO:     127.0.0.1:51990 - "POST /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/10/06 16:37:53 INFO:     127.0.0.1:52021 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 16:38:02 INFO:     127.0.0.1:52043 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 16:39:56 INFO:     127.0.0.1:52210 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 16:40:05 INFO:     127.0.0.1:52223 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 16:41:35 INFO:     127.0.0.1:52370 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 16:41:57 INFO:     127.0.0.1:52416 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 16:43:05 INFO:     127.0.0.1:52524 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 16:43:11 INFO:     127.0.0.1:52528 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 16:43:18 INFO:     127.0.0.1:52542 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 16:43:20 INFO:     127.0.0.1:52542 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 16:43:27 INFO:     127.0.0.1:52552 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 16:43:39 INFO:     127.0.0.1:52584 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 16:44:07 INFO:     127.0.0.1:52689 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 16:44:44 INFO:     127.0.0.1:52775 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 16:46:20 INFO:     127.0.0.1:53272 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 18:10:49 INFO:     127.0.0.1:59372 - "GET /ajax-api/2.0/mlflow/users/current HTTP/1.1" 404 Not Found
+2026/10/06 18:10:49 INFO:     127.0.0.1:59374 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 18:10:49 INFO:     127.0.0.1:59373 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/06 18:10:49 INFO:     127.0.0.1:59372 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/06 21:09:05 INFO:     127.0.0.1:60664 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/06 23:15:12 INFO:     127.0.0.1:61540 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/07 07:24:10 INFO:     127.0.0.1:62856 - "GET /ajax-api/2.0/mlflow/users/current HTTP/1.1" 404 Not Found
+2026/10/07 07:24:10 INFO:     127.0.0.1:62857 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/07 07:24:10 INFO:     127.0.0.1:62859 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/07 07:24:10 INFO:     127.0.0.1:62858 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/07 07:30:11 INFO:     127.0.0.1:63152 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/07 07:32:19 INFO:     127.0.0.1:49985 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/07 08:33:47 INFO:     127.0.0.1:59038 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/07 08:49:33 INFO:     127.0.0.1:61636 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/07 08:51:02 INFO:     127.0.0.1:61852 - "GET /ajax-api/2.0/mlflow/model-versions/search?filter=tags.%60mlflow.prompt.is_prompt%60+%3D+%27true%27+AND+tags.%60mlflow.prompt.run_ids%60+ILIKE+%22%2580e9ac1e078a4f1eb8666f7b65efaaf6%25%22 HTTP/1.1" 200 OK
+2026/10/07 08:51:02 INFO:     127.0.0.1:61852 - "GET /static-files/static/css/9935.26533251.chunk.css HTTP/1.1" 200 OK
+2026/10/07 08:51:02 INFO:     127.0.0.1:61864 - "GET /static-files/static/js/9935.96cc468b.chunk.js HTTP/1.1" 200 OK
+2026/10/07 08:51:02 INFO:     127.0.0.1:61864 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC&filter=tags.%60mlflow.experiment.isGateway%60+IS+NULL HTTP/1.1" 200 OK
+2026/10/07 08:51:05 INFO:     127.0.0.1:61864 - "GET / HTTP/1.1" 304 Not Modified
+2026/10/07 08:51:05 INFO:     127.0.0.1:61864 - "GET /ajax-api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+2026/10/07 08:51:05 INFO:     127.0.0.1:61864 - "GET /ajax-api/2.0/mlflow/users/current HTTP/1.1" 404 Not Found
+2026/10/07 08:51:05 INFO:     127.0.0.1:61870 - "GET /ajax-api/3.0/mlflow/assistant/config HTTP/1.1" 200 OK
+2026/10/07 08:51:05 INFO:     127.0.0.1:61864 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC&filter=tags.%60mlflow.experiment.isGateway%60+IS+NULL HTTP/1.1" 200 OK
+2026/10/07 08:51:05 INFO:     127.0.0.1:61852 - "GET /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/10/07 08:51:05 INFO:     127.0.0.1:61871 - "GET /ajax-api/3.0/mlflow/assistant/providers HTTP/1.1" 200 OK
+2026/10/07 08:51:07 INFO:     127.0.0.1:61852 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/07 08:51:07 INFO:     127.0.0.1:61871 - "POST /graphql HTTP/1.1" 200 OK
+2026/10/07 08:51:07 INFO:     127.0.0.1:61871 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:51:07 INFO:     127.0.0.1:61852 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:51:07 INFO:     127.0.0.1:61864 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:51:07 INFO:     127.0.0.1:61871 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:51:07 INFO:     127.0.0.1:61852 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:51:07 INFO:     127.0.0.1:61871 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:51:07 INFO:     127.0.0.1:61864 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:51:07 INFO:     127.0.0.1:61852 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:51:07 INFO:     127.0.0.1:61878 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:51:07 INFO:     127.0.0.1:61870 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:51:07 INFO:     127.0.0.1:61879 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:51:10 INFO:     127.0.0.1:61879 - "POST /ajax-api/2.0/mlflow/experiments/search-datasets HTTP/1.1" 200 OK
+2026/10/07 08:51:10 INFO:     127.0.0.1:61879 - "GET /ajax-api/2.0/mlflow/gateway-proxy?gateway_path=api%2F2.0%2Fendpoints%2F HTTP/1.1" 200 OK
+2026/10/07 08:51:10 INFO:     127.0.0.1:61852 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/07 08:51:10 INFO:     127.0.0.1:61878 - "POST /ajax-api/2.0/mlflow/logged-models/search HTTP/1.1" 200 OK
+2026/10/07 08:51:11 INFO:     127.0.0.1:61870 - "GET /static-files/static/js/2685.2f8f1b38.chunk.js HTTP/1.1" 200 OK
+2026/10/07 08:59:03 INFO:     127.0.0.1:63176 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/07 08:59:04 INFO:     127.0.0.1:63175 - "POST /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/10/07 08:59:06 INFO:     127.0.0.1:63175 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC&filter=tags.%60mlflow.experiment.isGateway%60+IS+NULL HTTP/1.1" 200 OK
+2026/10/07 08:59:07 INFO:     127.0.0.1:63175 - "GET / HTTP/1.1" 304 Not Modified
+2026/10/07 08:59:07 INFO:     127.0.0.1:63175 - "GET /ajax-api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+2026/10/07 08:59:07 INFO:     127.0.0.1:63175 - "GET /ajax-api/2.0/mlflow/users/current HTTP/1.1" 404 Not Found
+2026/10/07 08:59:07 INFO:     127.0.0.1:63178 - "GET /ajax-api/3.0/mlflow/assistant/config HTTP/1.1" 200 OK
+2026/10/07 08:59:07 INFO:     127.0.0.1:63179 - "GET /ajax-api/3.0/mlflow/assistant/providers HTTP/1.1" 200 OK
+2026/10/07 08:59:07 INFO:     127.0.0.1:63175 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC&filter=tags.%60mlflow.experiment.isGateway%60+IS+NULL HTTP/1.1" 200 OK
+2026/10/07 08:59:08 INFO:     127.0.0.1:63176 - "GET /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/10/07 08:59:15 INFO:     127.0.0.1:63189 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC&filter=tags.%60mlflow.experiment.isGateway%60+IS+NULL HTTP/1.1" 200 OK
+2026/10/07 08:59:28 INFO:     127.0.0.1:63231 - "GET /experiments HTTP/1.1" 404 Not Found
+2026/10/07 08:59:28 INFO:     127.0.0.1:63231 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2026/10/07 08:59:35 INFO:     127.0.0.1:63232 - "GET / HTTP/1.1" 304 Not Modified
+2026/10/07 08:59:35 INFO:     127.0.0.1:63241 - "GET /static-files/static/css/main.b0f58ef9.css HTTP/1.1" 200 OK
+2026/10/07 08:59:35 INFO:     127.0.0.1:63232 - "GET /static-files/static/js/main.32eac661.js HTTP/1.1" 200 OK
+2026/10/07 08:59:35 INFO:     127.0.0.1:63232 - "GET /ajax-api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+2026/10/07 08:59:35 INFO:     127.0.0.1:63232 - "GET /ajax-api/2.0/mlflow/users/current HTTP/1.1" 404 Not Found
+2026/10/07 08:59:35 INFO:     127.0.0.1:63241 - "GET /ajax-api/3.0/mlflow/assistant/config HTTP/1.1" 200 OK
+2026/10/07 08:59:35 INFO:     127.0.0.1:63242 - "GET /ajax-api/3.0/mlflow/assistant/providers HTTP/1.1" 200 OK
+2026/10/07 08:59:35 INFO:     127.0.0.1:63242 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+2026/10/07 08:59:38 INFO:     127.0.0.1:63242 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC&filter=tags.%60mlflow.experiment.isGateway%60+IS+NULL HTTP/1.1" 200 OK
+2026/10/07 08:59:41 INFO:     127.0.0.1:63249 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/07 08:59:42 INFO:     127.0.0.1:63242 - "POST /graphql HTTP/1.1" 200 OK
+2026/10/07 08:59:42 INFO:     127.0.0.1:63249 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:59:42 INFO:     127.0.0.1:63249 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:59:42 INFO:     127.0.0.1:63254 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:59:42 INFO:     127.0.0.1:63249 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:59:42 INFO:     127.0.0.1:63249 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:59:42 INFO:     127.0.0.1:63254 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:59:42 INFO:     127.0.0.1:63249 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:59:42 INFO:     127.0.0.1:63255 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:59:42 INFO:     127.0.0.1:63256 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:59:42 INFO:     127.0.0.1:63257 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 08:59:43 INFO:     127.0.0.1:63242 - "POST /ajax-api/3.0/mlflow/traces/metrics HTTP/1.1" 200 OK
+2026/10/07 09:00:07 INFO:     127.0.0.1:63311 - "POST /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/10/07 09:07:13 INFO:     127.0.0.1:64210 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC&filter=tags.%60mlflow.experiment.isGateway%60+IS+NULL HTTP/1.1" 200 OK
+2026/10/07 09:07:38 INFO:     127.0.0.1:64246 - "POST /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/10/07 09:07:58 INFO:     127.0.0.1:64306 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC&filter=tags.%60mlflow.experiment.isGateway%60+IS+NULL HTTP/1.1" 200 OK
+2026/10/07 09:08:03 INFO:     127.0.0.1:64306 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=25&order_by=last_update_time+DESC&filter=tags.%60mlflow.experiment.isGateway%60+IS+NULL HTTP/1.1" 200 OK
+2026/10/07 09:51:40 INFO:     127.0.0.1:53463 - "GET / HTTP/1.1" 304 Not Modified
+2026/10/07 09:51:40 INFO:     127.0.0.1:53463 - "GET /ajax-api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+2026/10/07 09:51:40 INFO:     127.0.0.1:53464 - "GET /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/10/07 09:51:40 INFO:     127.0.0.1:53468 - "GET /ajax-api/3.0/mlflow/assistant/config HTTP/1.1" 200 OK
+2026/10/07 09:51:40 INFO:     127.0.0.1:53463 - "GET /static-files/static/css/5685.1c4cc586.chunk.css HTTP/1.1" 200 OK
+2026/10/07 09:51:40 INFO:     127.0.0.1:53468 - "GET /ajax-api/3.0/mlflow/assistant/providers HTTP/1.1" 200 OK
+2026/10/07 09:51:40 INFO:     127.0.0.1:53467 - "GET /ajax-api/2.0/mlflow/users/current HTTP/1.1" 404 Not Found
+2026/10/07 09:51:40 INFO:     127.0.0.1:53466 - "POST /ajax-api/2.0/mlflow/runs/search HTTP/1.1" 200 OK
+2026/10/07 09:51:40 INFO:     127.0.0.1:53464 - "GET /static-files/static/js/7720.1cbd9501.chunk.js HTTP/1.1" 200 OK
+2026/10/07 09:51:40 INFO:     127.0.0.1:53463 - "GET /static-files/static/js/5685.6bc4aa69.chunk.js HTTP/1.1" 200 OK
+2026/10/07 09:51:40 INFO:     127.0.0.1:53465 - "POST /graphql HTTP/1.1" 200 OK
+2026/10/07 09:51:40 INFO:     127.0.0.1:53465 - "GET /ajax-api/2.0/mlflow/logged-models/m-e7ee8d70c6564daa8e4ef30799434d97 HTTP/1.1" 404 Not Found
+2026/10/07 09:51:43 INFO:     127.0.0.1:53465 - "GET / HTTP/1.1" 304 Not Modified
+2026/10/07 09:51:43 INFO:     127.0.0.1:53464 - "GET /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/10/07 09:51:43 INFO:     127.0.0.1:53465 - "GET /ajax-api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+2026/10/07 09:51:43 INFO:     127.0.0.1:53465 - "GET /ajax-api/2.0/mlflow/users/current HTTP/1.1" 404 Not Found
+2026/10/07 09:51:43 INFO:     127.0.0.1:53463 - "GET /ajax-api/3.0/mlflow/assistant/providers HTTP/1.1" 200 OK
+2026/10/07 09:51:43 INFO:     127.0.0.1:53464 - "GET /ajax-api/3.0/mlflow/assistant/config HTTP/1.1" 200 OK
+2026/10/07 09:51:43 INFO:     127.0.0.1:53463 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+2026/10/07 09:52:30 INFO:     127.0.0.1:53545 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+2026/10/07 10:06:07 INFO:     127.0.0.1:54597 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+2026/10/07 10:12:01 INFO:     127.0.0.1:55024 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+2026/10/07 10:15:44 INFO:     127.0.0.1:55356 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+2026/10/07 10:24:21 INFO:     127.0.0.1:56338 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+2026/10/07 10:24:23 INFO:     127.0.0.1:56338 - "GET / HTTP/1.1" 304 Not Modified
+2026/10/07 10:24:23 INFO:     127.0.0.1:56338 - "GET /ajax-api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+2026/10/07 10:24:23 INFO:     127.0.0.1:56343 - "GET /ajax-api/3.0/mlflow/ui-telemetry HTTP/1.1" 200 OK
+2026/10/07 10:24:24 INFO:     127.0.0.1:56343 - "GET /ajax-api/2.0/mlflow/users/current HTTP/1.1" 404 Not Found
+2026/10/07 10:24:24 INFO:     127.0.0.1:56338 - "GET /ajax-api/3.0/mlflow/assistant/config HTTP/1.1" 200 OK
+2026/10/07 10:24:24 INFO:     127.0.0.1:56344 - "GET /ajax-api/3.0/mlflow/assistant/providers HTTP/1.1" 200 OK
+2026/10/07 10:24:24 INFO:     127.0.0.1:56343 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+2026/10/07 10:29:56 INFO:     127.0.0.1:56857 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+2026/10/07 11:16:25 INFO:     127.0.0.1:59558 - "GET /ajax-api/2.0/mlflow/users/current HTTP/1.1" 404 Not Found
+2026/10/07 11:16:25 INFO:     127.0.0.1:59557 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK
+2026/10/07 11:16:51 INFO:     127.0.0.1:59725 - "GET /ajax-api/2.0/mlflow/users/current HTTP/1.1" 404 Not Found
+2026/10/07 11:27:18 INFO:     127.0.0.1:60749 - "GET /ajax-api/2.0/mlflow/experiments/search?max_results=5&order_by=last_update_time+DESC HTTP/1.1" 200 OK

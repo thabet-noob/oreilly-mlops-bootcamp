@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Income Classifier</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f4f6f8; color: #1f2933; margin: 0; padding: 32px 16px; }
+    .card { max-width: 760px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 28px 32px; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); }
+    h1 { margin: 0 0 4px; font-size: 1.5rem; }
+    .subtitle { margin: 0 0 24px; color: #616e7c; }
+    form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 20px; }
+    label { display: flex; flex-direction: column; font-size: 0.85rem; font-weight: 600; gap: 6px; }
+    input, select { font: inherit; font-weight: 400; padding: 8px 10px; border: 1px solid #cbd2d9; border-radius: 6px; background: #fff; }
+    input:focus, select:focus { outline: 2px solid #3e7bfa; border-color: transparent; }
+    .actions { grid-column: 1 / -1; display: flex; gap: 12px; margin-top: 6px; }
+    button { font: inherit; font-weight: 600; padding: 10px 20px; border-radius: 6px; border: none; cursor: pointer; }
+    button[type="submit"] { background: #3e7bfa; color: #fff; }
+    button[type="submit"]:disabled { background: #9ab6f5; cursor: wait; }
+    button[type="reset"] { background: #e4e7eb; color: #1f2933; }
+    #result { margin-top: 22px; padding: 16px 18px; border-radius: 8px; display: none; }
+    #result.high { display: block; background: #e3f9e5; border: 1px solid #57ae5b; }
+    #result.low { display: block; background: #fff3e0; border: 1px solid #f0b429; }
+    #result.error { display: block; background: #ffe3e3; border: 1px solid #e66a6a; }
+    #result .label { font-size: 1.3rem; font-weight: 700; }
+    .bar { height: 10px; background: #e4e7eb; border-radius: 5px; margin-top: 10px; overflow: hidden; }
+    .bar div { height: 100%; background: #3e7bfa; }
+    @media (max-width: 600px) { form { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Income Classifier</h1>
+    <p class="subtitle">Predict whether a person earns more than $50K per year (1994 U.S. Census model).</p>
+
+    <form id="predict-form">
+      {% for field in fields %}
+      <label>
+        {{ field.name }}
+        {% if field.type == "select" %}
+        <select name="{{ field.name }}">
+          {% for option in field.options %}
+          <option value="{{ option }}" {% if option == field.default %}selected{% endif %}>{{ option.strip() }}</option>
+          {% endfor %}
+        </select>
+        {% else %}
+        <input type="number" name="{{ field.name }}" value="{{ field.default }}" min="{{ field.min }}" max="{{ field.max }}" step="1" required>
+        {% endif %}
+      </label>
+      {% endfor %}
+
+      <div class="actions">
+        <button type="submit">Predict</button>
+        <button type="reset">Reset to defaults</button>
+      </div>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script>
+    // Keep education-num in sync with the chosen education level (same mapping as adult.data)
+    const EDUCATION_NUM = {
+      "Preschool": 1, "1st-4th": 2, "5th-6th": 3, "7th-8th": 4, "9th": 5, "10th": 6, "11th": 7, "12th": 8,
+      "HS-grad": 9, "Some-college": 10, "Assoc-voc": 11, "Assoc-acdm": 12, "Bachelors": 13,
+      "Masters": 14, "Prof-school": 15, "Doctorate": 16
+    };
+    const form = document.getElementById("predict-form");
+    const result = document.getElementById("result");
+
+    form.elements["education"].addEventListener("change", (event) => {
+      const educationNum = EDUCATION_NUM[event.target.value.trim()];
+      if (educationNum) form.elements["education-num"].value = educationNum;
+    });
+
+    form.addEventListener("reset", () => { result.className = ""; });
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const button = form.querySelector("button[type='submit']");
+      button.disabled = true;
+
+      // Numbers must be sent as numbers, categories as the exact strings the model was trained on
+      const payload = {};
+      for (const element of form.elements) {
+        if (!element.name) continue;
+        payload[element.name] = element.type === "number" ? Number(element.value) : element.value;
+      }
+
+      try {
+        const response = await fetch("/predict", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        const data = await response.json();
+        if (!response.ok || data.error) throw new Error(data.error || response.statusText);
+
+        const probability = data["probability_>50K"];
+        result.className = data.prediction === ">50K" ? "high" : "low";
+        result.innerHTML =
+          `<div class="label">Prediction: ${data.prediction}</div>` +
+          `<div>Probability of &gt;50K: ${(probability * 100).toFixed(1)}%</div>` +
+          `<div class="bar"><div style="width: ${probability * 100}%"></div></div>`;
+      } catch (error) {
+        result.className = "error";
+        result.textContent = `Error: ${error.message}`;
+      } finally {
+        button.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
