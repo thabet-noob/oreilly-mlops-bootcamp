@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 print("Hello World")
 # Load model and preprocessor from local files for CI/CD reliability
-# add a comment here
+# add a comment here , 
 try:
     model = joblib.load("model/rf_model.pkl")
     preprocessor = joblib.load("model/preprocessor.pkl")
